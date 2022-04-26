@@ -1,14 +1,18 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import LogoTitle from '../../assets/images/logo-s.png';
 import AnimatedLetters from '../AnimatedLetters';
 
 export default function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');
   const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n'];
-  const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'];
+  const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.'];
   
+  useEffect(() => {
+    return setLetterClass('text-animate-hover');
+  }, []);
+
   return (
     <div className='container home-page'>
       <div className='text-zone'>
