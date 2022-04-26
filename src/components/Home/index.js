@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import LogoTitle from '../../assets/images/logo-s.png';
 import AnimatedLetters from '../AnimatedLetters';
+import Logo from './Logo';
 
 export default function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -46,7 +47,7 @@ export default function Home() {
         <h2>Frontend Developer / JavaScript Expert / YouTuber</h2>
         <Link className='flat-bottom' to='/contact'>CONTACT ME</Link>
       </div>
-
+      <Logo />
     </div>
   );
 }
