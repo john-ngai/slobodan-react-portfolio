@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
-    <div className='container'>
+    <div className='container home-page'>
       <div className='text-zone'>
         <h1>Hi, <br /> I'm
           <img src={LogoTitle} alt='developer' />
