@@ -11,7 +11,9 @@ export default function Home() {
   const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.'];
   
   useEffect(() => {
-    return setLetterClass('text-animate-hover');
+    setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 4000);
   }, []);
 
   return (
